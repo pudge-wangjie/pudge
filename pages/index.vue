@@ -21,7 +21,7 @@
           target="_blank"
           class="button--grey"
         >
-          GitHub
+          GitHub cc到此一游
         </a>
       </div>
     </div>
