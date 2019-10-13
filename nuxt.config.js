@@ -23,6 +23,7 @@ module.exports = {
   ** Global CSS
   */
   css: [
+    '~/assets/css/style.less',
     'element-ui/lib/theme-chalk/index.css'
   ],
   /*
