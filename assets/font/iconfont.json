@@ -55,6 +55,13 @@
       "unicode_decimal": 58901
     },
     {
+      "icon_id": "3876353",
+      "name": "vuejs",
+      "font_class": "vuejs",
+      "unicode": "e640",
+      "unicode_decimal": 58944
+    },
+    {
       "icon_id": "3876384",
       "name": "react",
       "font_class": "react",
@@ -109,13 +116,6 @@
       "font_class": "tuichuquanping",
       "unicode": "e603",
       "unicode_decimal": 58883
-    },
-    {
-      "icon_id": "10784920",
-      "name": "bxl-vuejs",
-      "font_class": "bxl-vuejs",
-      "unicode": "e6ee",
-      "unicode_decimal": 59118
     }
   ]
 }
