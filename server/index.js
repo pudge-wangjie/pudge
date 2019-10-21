@@ -1,6 +1,7 @@
 const Koa = require('koa')
 const consola = require('consola')
 const { Nuxt, Builder } = require('nuxt')
+import cssInterface from './interface/css';
 
 const app = new Koa()
 
@@ -24,6 +25,8 @@ async function start () {
   } else {
     await nuxt.ready()
   }
+
+  app.use(cssInterface.routes()).use(cssInterface.allowedMethods());
 
   app.use((ctx) => {
     ctx.status = 200

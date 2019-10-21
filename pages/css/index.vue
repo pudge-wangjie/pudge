@@ -4,7 +4,8 @@
     <div class="part2"></div>
     <div class="part3"></div>
     <div class="main">
-      <h2>111111</h2>
+      <!-- <h2>111111</h2> -->
+      <h2 v-for="(item, index) in list" :key="index">{{item}}</h2>
       <p>
         html和css够简单和熟悉不过了吧,
         <br>可是你真的会了吗？
@@ -31,16 +32,29 @@
 </template>
 
 <script>
+import axios from 'axios';
 export default {
   name: "StageTop",
   props: {},
   data() {
     return {
       value: '',
-      optionsTag: []
+      optionsTag: [],
+      list: []
     };
   },
   computed: {},
+  mounted() {
+    console.log(this.list);
+  },
+  async asyncData() {
+    let {status, data: {list}} = await axios.get('http://localhost:3000/css/list');
+    if (status == 200) {
+      return {
+        list
+      }
+    }
+  },
   methods: {
     selectChange(val) {
       console.log(value);
